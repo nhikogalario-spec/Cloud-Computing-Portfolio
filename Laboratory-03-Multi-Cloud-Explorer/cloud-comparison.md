@@ -1,38 +1,9 @@
-# Cloud Platform Comparison
+# Cloud Service Equivalents
 
-## AWS vs Azure vs Google Cloud Platform
-
-| Feature | AWS | Microsoft Azure | Google Cloud Platform |
-|---|---|---|---|
-| Provider | Amazon | Microsoft | Google |
-| Virtual Machines | EC2 | Virtual Machines | Compute Engine |
-| Storage | S3 | Blob Storage | Cloud Storage |
-| Database | RDS | Azure SQL Database | Cloud SQL |
-| Networking | VPC | Virtual Network | VPC |
-| Serverless | Lambda | Azure Functions | Cloud Functions |
-| Main Strength | Large variety of services | Microsoft integration | Data and AI services |
-
-## Similarities
-
-AWS, Azure, and GCP are all cloud computing platforms. They provide services such as:
-
-- Computing
-- Storage
-- Databases
-- Networking
-- Security
-- Backup
-
-They allow users to access resources through the internet without needing to maintain all physical hardware themselves.
-
-## Differences
-
-**AWS** has a very large selection of cloud services and is widely used by businesses.
-
-**Azure** works well with Microsoft products and services.
-
-**GCP** is strong in data analytics, artificial intelligence, and Google's cloud technologies.
-
-## Conclusion
-
-AWS, Azure, and GCP are all powerful cloud platforms. The best choice depends on the needs of the organization, budget, existing technology, and required cloud services.
+| Service Category   | AWS                                | Azure                          | GCP                  |
+|--------------------|------------------------------------|--------------------------------|----------------------|
+| Virtual Machine    | EC2 (Elastic Compute Cloud)        | Virtual Machines               | Compute Engine       |
+| Object Storage     | S3 (Simple Storage Service)        | Blob Storage                   | Cloud Storage        |
+| Identity Management| IAM                                | Azure Active Directory         | Cloud IAM            |
+| SQL Database       | RDS (Relational Database Service)  | Azure SQL Database             | Cloud SQL            |
+| Kubernetes         | EKS (Elastic Kubernetes Service)   | AKS (Azure Kubernetes Service) | GKE (Google Kubernetes Engine) |
