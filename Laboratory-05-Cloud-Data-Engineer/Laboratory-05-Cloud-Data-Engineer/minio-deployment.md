@@ -1,17 +1,12 @@
-# MinIO Deployment
+# Checkpoint 5: Technical Documentation (MinIO Deployment)
 
-## Deployment Status
+## Deployment Overview
+To deploy an S3-compatible Object Storage server locally, Docker was used to instantiate a MinIO container with custom environment credentials and forwarded ports.
 
-MinIO will be deployed using Docker in the KillerCoda Ubuntu Playground.
-
-## Docker Command
-
-The deployment command will be documented here after the MinIO server is successfully deployed.
-
-## Web Console
-
-The MinIO Web Console will use port **9001**.
-
-## Bucket
-
-The required bucket name is **client-photos**.
+## Technical Details
+* **Docker Deployment Command:**
+  ```bash
+  docker run -d -p 9000:9000 -p 9001:9001 --name minio-server \
+  -e "MINIO_ROOT_USER=cloudadmin" \
+  -e "MINIO_ROOT_PASSWORD=CloudNova2026!" \
+  minio/minio server /data --console-address ":9001"
